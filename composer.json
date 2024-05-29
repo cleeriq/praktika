@@ -1,0 +1,14 @@
+{
+    "name": "ven/app",
+    "autoload": {
+        "psr-4": {
+            "Ven\\App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lvn"
+        }
+    ],
+    "require": {}
+}
