@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style_orders.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Заказы</title>
+</head>
+<body>
+    <div class="add-bg">
+        <div class="add-block">
+            <div class="close">
+            <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="20.000000" height="20.000000" fill="#FFFFFF" fill-opacity="0"/>
+                <path d="M12.09 9.94L17.09 4.9C17.32 4.67 17.32 4.32 17.09 4.09L16.32 3.28C16.09 3.05 15.75 3.05 15.51 3.28L10.48 8.32C10.32 8.48 10.09 8.48 9.94 8.32L4.9 3.25C4.67 3.01 4.32 3.01 4.09 3.25L3.28 4.05C3.05 4.28 3.05 4.63 3.28 4.86L8.32 9.9C8.48 10.05 8.48 10.28 8.32 10.44L3.25 15.51C3.01 15.75 3.01 16.09 3.25 16.32L4.05 17.13C4.28 17.36 4.63 17.36 4.86 17.13L9.9 12.09C10.05 11.94 10.28 11.94 10.44 12.09L15.48 17.13C15.71 17.36 16.05 17.36 16.28 17.13L17.09 16.32C17.32 16.09 17.32 15.75 17.09 15.51L12.09 10.48C11.94 10.32 11.94 10.09 12.09 9.94L12.09 9.94Z" fill="#706E6B" fill-opacity="1.000000" fill-rule="evenodd"/>
+            </svg>
+            </div>
+            <form id="addOrderForm">
+                <div>Заказ
+                    <div id="positions"></div>
+                </div>
+                <div>
+                    <select name="positionSelect">
+                        <option disabled selected hidden>Добавить блюдо</option>
+                        <option value="1">Позиция 1</option>
+                        <option value="2">Позиция 2</option>
+                        <option value="3">Позиция 3</option>
+                        <option value="4">Позиция 4</option>
+                    </select>
+                </div>
+                <button type="submit">Добавить</button>
+            </form>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <a href="#">заказы</a>
+        </nav>
+        <div>
+            <a href="#">
+                <svg width="30.000000" height="30.000000" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <clipPath id="clip6_77">
+                            <rect id="sign-out-alt" width="30.000000" height="30.000000" fill="white" fill-opacity="0"/>
+                        </clipPath>
+                    </defs>
+                    <rect id="sign-out-alt" width="30.000000" height="30.000000" fill="#FFFFFF" fill-opacity="0"/>
+                    <g clip-path="url(#clip6_77)">
+                        <path id="Vector" d="M22.5 5L25 5L25 25L22.5 25L22.5 5Z" fill="#1C2E45" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        <path id="Vector" d="M15 12.5L5 12.5L5 17.5L15 17.5L15 21.25L21.25 15L15 8.75L15 12.5Z" fill="#1C2E45" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <button class="trigger">Добавить</button>
+            <div class="orders-list">
+                <div class="order">
+                    <div class="header">
+                        <div>
+                            <div class="status">Статус:</div>
+                            <select>
+                                <option>Принят</option>
+                                <option>Принят</option>
+                                <option>Принят</option>
+                            </select>
+                            <div class="change-order">Изменить</div>
+                        </div>
+                    </div>
+                    <div class="positions">
+                        <ul>
+                            <li value="1">Позиция 1</li>
+                            <li value="2">Позиция 2</li>
+                            <li value="3">Позиция 3</li>
+                        </ul>
+                    </div>
+                </div>    
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/orders.js" language="JavaScript" type="text/javascript"></script>
+</body>
+</html>
